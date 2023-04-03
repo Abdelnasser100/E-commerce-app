@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="SubCategoriesCollectionViewCell" customModule="E_commerce_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tt-Gn-B6I">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Pt-T4T">
+                                <rect key="frame" x="8" y="8" width="371" height="164"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TSP-Pt-T4T" firstAttribute="top" secondItem="0tt-Gn-B6I" secondAttribute="top" constant="8" id="9ps-Vn-9ql"/>
+                            <constraint firstItem="TSP-Pt-T4T" firstAttribute="leading" secondItem="0tt-Gn-B6I" secondAttribute="leading" constant="8" id="Bbn-xd-PoM"/>
+                            <constraint firstAttribute="bottom" secondItem="TSP-Pt-T4T" secondAttribute="bottom" constant="8" id="Mdc-Zv-AB5"/>
+                            <constraint firstAttribute="trailing" secondItem="TSP-Pt-T4T" secondAttribute="trailing" constant="8" id="dXf-Lw-93g"/>
+                            <constraint firstItem="TSP-Pt-T4T" firstAttribute="centerX" secondItem="0tt-Gn-B6I" secondAttribute="centerX" id="qAF-2m-PmP"/>
+                            <constraint firstItem="TSP-Pt-T4T" firstAttribute="centerY" secondItem="0tt-Gn-B6I" secondAttribute="centerY" id="rxC-s6-KE4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0tt-Gn-B6I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="78M-3q-lAG"/>
+                <constraint firstItem="0tt-Gn-B6I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bfb-Ig-hGJ"/>
+                <constraint firstAttribute="trailing" secondItem="0tt-Gn-B6I" secondAttribute="trailing" id="cvh-RG-Kft"/>
+                <constraint firstAttribute="bottom" secondItem="0tt-Gn-B6I" secondAttribute="bottom" id="e0x-XC-v5I"/>
+            </constraints>
+            <size key="customSize" width="387" height="180"/>
+            <connections>
+                <outlet property="cardView" destination="0tt-Gn-B6I" id="8z7-tv-Zuv"/>
+                <outlet property="categoryNameLable" destination="TSP-Pt-T4T" id="oUY-5c-0eZ"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="155.35714285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

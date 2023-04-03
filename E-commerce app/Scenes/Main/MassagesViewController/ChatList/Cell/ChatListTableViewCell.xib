@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatListTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="ChatListTableViewCell" customModule="E_commerce_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="d2U-TN-hcQ">
+                        <rect key="frame" x="8" y="8" width="299" height="75"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-sC-p8g" customClass="CardView" customModule="E_commerce_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="239" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9d-2W-gdh">
+                                        <rect key="frame" x="8" y="8" width="223" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="M9d-2W-gdh" firstAttribute="top" secondItem="dzb-sC-p8g" secondAttribute="top" constant="8" id="2xe-29-Hwy"/>
+                                    <constraint firstAttribute="trailing" secondItem="M9d-2W-gdh" secondAttribute="trailing" constant="8" id="2xt-R4-4kI"/>
+                                    <constraint firstAttribute="bottom" secondItem="M9d-2W-gdh" secondAttribute="bottom" constant="8" id="DUU-R6-2ws"/>
+                                    <constraint firstItem="M9d-2W-gdh" firstAttribute="leading" secondItem="dzb-sC-p8g" secondAttribute="leading" constant="8" id="NK6-IH-2Gw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dzb-sC-p8g" firstAttribute="width" secondItem="d2U-TN-hcQ" secondAttribute="width" multiplier="0.8" id="Wfa-Nr-thw"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d2U-TN-hcQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="164-3j-aD2"/>
+                    <constraint firstItem="d2U-TN-hcQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Anb-qg-zTX"/>
+                    <constraint firstAttribute="bottom" secondItem="d2U-TN-hcQ" secondAttribute="bottom" constant="8" id="FBw-Fy-4Tm"/>
+                    <constraint firstAttribute="trailing" secondItem="d2U-TN-hcQ" secondAttribute="trailing" constant="8" id="f4B-C9-JmS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="messageLable" destination="M9d-2W-gdh" id="I5V-Uu-REk"/>
+                <outlet property="stackView" destination="d2U-TN-hcQ" id="csH-sG-XyE"/>
+            </connections>
+            <point key="canvasLocation" x="60.14492753623189" y="103.45982142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
